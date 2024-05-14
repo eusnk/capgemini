@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: Comfortaa, sans-serif;
+}
+
+body {
+  background-color: #fefefe;
+  color: #2e2836;
+  margin: 0;
+  padding: 0;
+  background-size: 400% 400%;
+  animation: gradient 7s ease infinite;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.logout-button {
+  margin-left: auto;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer {
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  line-height: 0.2;
+}
+
+a {
+  color: #f8fafc;
+  color: #2e2836;
+}
+
+.splash-screen {
+  background: url('/marble.jpeg') center / cover no-repeat;
+  min-height: 90vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash-logo {
+  max-width: 300px;
+}
+
+.splash-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.splash-buttons > * {
+  font-family: Roboto, sans-serif;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 20px 60px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.splash-buttons > *:last-child {
+  background-color: black;
+  color: white;
+}
+
+.card {
+  margin: 0 auto;
+  padding-top: 60px;
+  max-width: 90%;
+}
+
+.card h1 {
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select {
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 1px;
+  font-size: 16px;
+  margin: 4px 0 14px 0;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+input:invalid,
+select:invalid {
+  border: 2px solid transparent;
+  outline: 2px solid #da2c38;
+}
+
+button,
+.disabled-button {
+  background-color: black;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.display-error {
+  text-align: center;
+  color: #da2c38;
+}
+
+.login-form u {
+  cursor: pointer;
+}
+
+.loading {
+  margin-left: 11%;
+}
+
+.card h4 {
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-photo {
+  width: 100%;
+  max-height: 400px;
+}
+
+.photo-functions {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.photo-functions .author {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+
+.photo-functions .author p:first-child {
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.photo-functions .author p:last-child {
+  margin-top: 4px;
+}
+
+.photo-functions .heart-icon {
+  margin-left: auto;
+  font-size: 1.5rem;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 80px;
+  margin-bottom: 10px;
+}
+
+.dashboard p {
+  line-height: 0;
+  margin-top: 20px;
+}
+
+.masonry {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 1340px;
+  gap: 10px;
+}
+
+.masonry-photo {
+  width: 48%;
+  height: 100%;
+}
+
+.bottom-nav {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid black;
+}
+
+.bottom-nav > * {
+  margin-top: 20px;
+}
+
+.bottom-nav .add-new-icon {
+  padding: 10px 40px;
+  background-color: hotpink;
+  border-radius: 30px;
+}
+
+.dashboard-search,
+.dashboard-search input {
+  width: 100%;
+}
+
+.dog-search {
+  height: 200vh;
+}
+
+.masonry-dogs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.masonry-dog {
+  width: 30%;
+  max-height: 100px;
+}
+
+.chat-dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.chat-div {
+  display: flex;
+  padding: 20px 0;
+  border-top: 1px solid grey;
+}
+
+.user-pfp {
+  border-radius: 100px;
+  min-width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.chat-div h4,
+.chat-div p {
+  margin-top: 0px;
+}
+
+.profile-page {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.profile-mockup {
+  text-align: center;
+}
+
+.profile-picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.upload-button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.disabled-button {
+  background-color: grey;
+  cursor: default;
+}
+
+.avatar-pf {
+  width: 140px;
+  height: 140px;
+  border-radius: 80px;
+}
+
+.profile-page {
+  margin-top: 30px;
+}
+
+.splash-buttons .follow {
+  width: 100%;
+}
+
+.splash-buttons .message {
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+.masonry-pf {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 800px;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.masonry-photo-pf {
+  width: 48%;
+  height: 100%;
+}
